@@ -21,33 +21,15 @@
         </div>
     </div>
     <div class="messages">
-        <div class="status-message">
-            <div class="time">(09:21:45)
-            </div>
-            <a>João
-            </a> entrou na sala            
-        </div>
-        <div class="normal-message">
-            <div class="time">
-                (09:21:45)
-            </div>
-            <a>Maria</a> para <a>João:</a> oi joão
-        </div>
-        <div class="reserved-message">
+        <div class="private-message">
             <div class="time">
                 (09:21:45)
             </div>
             <a>João</a> reservadamente para <a>Maria:</a>Oi gatinha quer tc?
         </div>
-        <div class="status-message">
-            <div class="time">
-                (09:22:58)
-            </div>
-            <a>Maria</a>sai da sala...
-        </div>
         <div class="bottom-bar">
             <input type="text" placeholder="Escreva aqui...">
-            <ion-icon name="paper-plane-outline"></ion-icon>
+            <div><ion-icon onclick="sendMessage()" name="paper-plane-outline"></ion-icon></div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
