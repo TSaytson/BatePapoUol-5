@@ -2,34 +2,39 @@
 <html lang="pt-bt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bate-Papo UOL</title>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
-    <div class="top-bar">
+    <div class="home">
         <div class="logo">
-            <img src="./Images/logo-topbar.png">
+            <img src="./Images/logo-topbar.png" />
+        </div>
+        <div class="login">
+            <input type="text" class="nome" placeholder="Digite seu nome" />
+            <button onclick="registerUser()">Entrar</button>
+        </div>
+    </div>
+    <div class="top-bar hidden">
+        <div class="logo">
+            <img src="./Images/logo-topbar.png" />
         </div>
         <div class="contacts">
-            <img src="./Images/contacts.png">
+            <ion-icon onclick="onlineParticipants()" name="people-sharp"></ion-icon>
         </div>
     </div>
     <div class="messages">
-        <div class="private-message">
-            <div class="time">
-                (09:21:45)
-            </div>
-            <a>João</a> reservadamente para <a>Maria:</a>Oi gatinha quer tc?
-        </div>
-        <div class="bottom-bar">
-            <input type="text" placeholder="Escreva aqui...">
-            <div><ion-icon onclick="sendMessage()" name="paper-plane-outline"></ion-icon></div>
+    </div>
+    <div class="bottom-bar hidden">
+        <input type="text" placeholder="Escreva aqui..." required />
+        <div>
+            <ion-icon onclick="sendMessage()" name="paper-plane-outline"></ion-icon>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
